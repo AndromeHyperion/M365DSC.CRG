@@ -426,7 +426,7 @@ function New-CompositeResourceModule
                 [void]$configString.AppendLine('')
 
                 $script:currentDepth = 0
-                $script:maxDepth = 8
+                $script:maxDepth = 9
 
                 # Process all parameters, but handle embedded parameters separately
                 $result = Get-EmbeddedPropertyString -Properties $resourceSchema.Attributes -Indentation $indent -ParameterName '$parameters'
